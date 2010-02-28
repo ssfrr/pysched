@@ -1,8 +1,8 @@
 #! /usr/bin/python
 
 from pysched import Scheduler
-from counterprocess import Counter, SlowCounter
-from timerevents import RelativeTimer
+from counters import Counter, SlowCounter
+from timers import RelativeTimer
 
 sched = Scheduler()
 counter1 = SlowCounter("First", 9)

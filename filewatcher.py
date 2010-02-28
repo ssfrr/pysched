@@ -7,6 +7,7 @@ class FileWatcher(Process):
 		self.filename = filename
 		self.wait(FileExistsEvent(filename))
 	def run(self):
+		print "Process " + self.name + " running"
 		print "File Found: " + self.filename
 		self.state = State.DONE
 

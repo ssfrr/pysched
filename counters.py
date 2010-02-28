@@ -1,5 +1,5 @@
 from pysched import State, Process 
-from timerevents import RelativeTimer
+from timers import RelativeTimer
 
 class Counter(Process):
 	def __init__(self, name, lifetime):
